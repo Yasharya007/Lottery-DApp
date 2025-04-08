@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import DeployLottery from './DeployLottery';
 import JoinLottery from './JoinLottery';
-
+import SelectWinner from './SelectWinner';
 function App() {
   const [contractAddress, setContractAddress] = useState("");
 
@@ -29,6 +29,9 @@ function App() {
 
         <div style={{ flex: 1 }}>
           <JoinLottery />
+        </div>
+        <div style={{ flex: "1", minWidth: "300px" }}>
+          <SelectWinner />
         </div>
       </div>
     </div>
